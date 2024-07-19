@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+
+        }
+        .item:first-child{
+            flex-grow: 2;
+        }
+        .item:nth-child(3){
+            flex-shrink: 3;
+        }
+        .item:nth-child(2){
+            flex-basis: 150px;
+        }
+        .item:first-child{
+            align-self: flex-end;
+        }
+        .item:nth-child(3){
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    O item 3 se alinhou no topo da págima acima do item 1
+</body>
+</html>

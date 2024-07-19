@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+    .item{
+        flex: 1 1 200px;
+        align-self: stretch;
+
+    }
+    .item:nth-child(2){
+        flex-grow: 2;
+    }
+    .item:nth-child(4){
+        order: -1;
+        flex-basis: 300px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item" style="background-color: red;">Item 1</div>
+        <div class="item" style="background-color: aqua;">Item 2</div>
+        <div class="item" style="background-color: brown;">Item 3</div>
+        <div class="item" style="background-color: darkgrey;">Item 4</div>
+    </div>
+    Todos itens são exibidos em colunas e o item 4 se alinha acima dos 
+    outros e com o tamanho minimo de 300 pixels enquanto os outros seguem em sua 
+    sequencia normal e com tamanho minino de 200 pixels. 
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    Conforme ajustamos o o tamanho da página os itens se alinham em diferentes estilos o
+    comprimento abaixo de 600px eles se alinham na mesma coluna e acima de 600 pixels eles se
+    alinham na mesma fileira
+</body>
+
+</html>

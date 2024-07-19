@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .item:nth-child(1) {
+        flex: 2 1 200px;
+    }
+
+    .item:nth-child(2) {
+        flex: 1 1 100px;
+    }
+
+    .item:nth-child(3) {
+        flex: 1 2 150px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    Os itens espaçaram-se conforme pre-destinamos  pelas quantidades de pixels descritas
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 100vh;
+
+        }
+        .item1:first-child{
+            flex-grow: 2;
+        }
+        .item3:nth-child(3){
+            flex-shrink: 3;
+        }
+        .container{
+            display: flex;
+            justify-content: center;    
+            height: 100vh;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .item1 {
+            width: 300px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+            flex-shrink: 1; /* Valor padrão */
+        }
+        .item2 {
+            width: 300px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            flex-shrink: 2; /* Maior capacidade de encolhimento */
+        }
+        .item3 {
+            width: 300px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 10px;
+            flex-shrink: 0; /* Sem encolhimento */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    O item 1 ele cresce enquanto página a pagina permite crescer enquanto
+    o item 3 faz exatamente o contrario ele diminui quanto a pagina permite
+    diminuir
+</body>
+</html>
